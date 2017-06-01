@@ -29,7 +29,6 @@ bool GetMacByGetAdaptersInfo(string &macOUT)
 		if (pAdapterInfo == NULL)
 			return false;
 	}
-	//if(GetAdaptersInfo = (IP_ADAPTER_INFO *)malloc())
 
 	if (GetAdaptersInfo(pAdapterInfo, &ulOutBufLen) == NO_ERROR)
 	{
@@ -68,8 +67,6 @@ int main(int argc, char * argt)
 	string acmac;
 	bool ret = true;
 
-	//cout << "The Mac Address: " << endl;
-
 	ret = GetMacByGetAdaptersInfo(acmac);
 
 	if (ret == true)
@@ -91,6 +88,12 @@ int main(int argc, char * argt)
 			cout << endl;
 			system("pause");
 		}
+		else
+		{
+			cout << "open file failed." << endl;
+			system("pause");
+		}
+			
 	}
 	else
 	{
