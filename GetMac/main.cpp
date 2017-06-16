@@ -11,6 +11,7 @@
 
 using namespace std;
 
+//GetAdaptersInfo
 bool GetMacByGetAdaptersInfo(string &macOUT)
 {
 	bool ret = false;
